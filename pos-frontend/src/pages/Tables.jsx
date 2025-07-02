@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import BottomNav from "../components/shared/BottomNav";
 import BackButton from "../components/shared/BackButton";
 import TableCard from "../components/tables/TableCard";
+import { tables } from "../constants";
 
 const Tables = () => {
   const [status, setStatus] = useState("all");
   return (
-    <section className="bg-[#1A1A1A] h-[calc(100vh-3rem)] overflow-hidden">
+    <section className="bg-[#1A1A1A] overflow-hidden">
       <div className="flex items-center justify-between px-10 py-4">
         <div className="flex items-center gap-4">
           <BackButton />
@@ -35,14 +36,18 @@ const Tables = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-5 px-16 py-4 overflow-y-scroll scrollbar-hide">
-        <TableCard />
-        <TableCard />
-        <TableCard />
-        <TableCard />
-        <TableCard />
-        <TableCard />
+        {tables.map((table) => {
+          return (
+            <TableCard
+              key={table.id}
+              name={table.name}
+              status={table.status}
+              initials={table.initial}
+            />
+          );
+        })}
       </div>
-      <BottomNav /> 
+      <BottomNav />
     </section>
   );
 };

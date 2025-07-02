@@ -72,3 +72,16 @@ export const popularDishes = [
     }
 
 ]
+
+export const tables = [
+    { id: 1, name: "Table 1", status: "booked", initial: "AM" },
+    { id: 2, name: "Table 2", status: "booked", initial: "MB" },
+    { id: 3, name: "Table 3", status: "available", initial: "JS" },
+    { id: 4, name: "Table 4", status: "booked", initial: "HR" },
+    { id: 5, name: "Table 5", status: "available", initial: "PL" },
+    { id: 6, name: "Table 6", status: "booked", initial: "RT" },
+    { id: 7, name: "Table 7", status: "available", initial: "LC" },
+    { id: 8, name: "Table 8", status: "booked", initial: "DP" },
+    { id: 9, name: "Table 9", status: "available", initial: "NK" },
+    { id: 10, name: "Table 10", status: "booked", initial: "SB" }
+]

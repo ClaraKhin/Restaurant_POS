@@ -1,13 +1,18 @@
-import React from "react";
+import { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineReorder } from "react-icons/md";
 import { MdTableBar } from "react-icons/md";
 import { CiCircleMore } from "react-icons/ci";
 import { BiSolidDish } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
+import Modal from "./Modal";
 
 const BottomNav = () => {
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-[#2a2438] p-2 flex justify-around">
       <button
@@ -35,9 +40,17 @@ const BottomNav = () => {
         <p>More</p>
       </button>
 
-      <button className="absolute bottom-6 bg-[#F6B100] text-[#f5f5f5] rounded-full p-3 items-center">
+      <button
+        onClick={openModal}
+        className="absolute bottom-6 bg-[#F6B100] text-[#f5f5f5] rounded-full p-3 items-center"
+      >
         <BiSolidDish size={30} />
       </button>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        title="Create Order"
+      ></Modal>
     </div>
   );
 };
