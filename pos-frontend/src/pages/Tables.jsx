@@ -34,10 +34,15 @@ const Tables = () => {
           </button>
         </div>
       </div>
-      <div className="px-16 py-4">
+      <div className="grid grid-cols-3 gap-5 px-16 py-4 overflow-y-scroll scrollbar-hide">
+        <TableCard />
+        <TableCard />
+        <TableCard />
+        <TableCard />
+        <TableCard />
         <TableCard />
       </div>
-      <BottomNav />
+      <BottomNav /> 
     </section>
   );
 };
