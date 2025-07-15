@@ -7,7 +7,7 @@ import logo from "../../assets/images/Luxury_Planet.png";
 const Header = () => {
   return (
     <>
-      <header className="flex justify-between items-center py-4 px-8 bg-[#2a2438]">
+      <header className="flex justify-between items-center py-4 px-8 bg-[#000000]">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img src={logo} className="h-8 w-8 rounded-full" alt="Luxury logo" />
@@ -17,12 +17,12 @@ const Header = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="flex items-center gap-4 bg-[#5c5470] rounded-[15px] px-4 py-2 w-[500px]">
+        <div className="flex items-center gap-4 bg-[#1F1F1F] rounded-[15px] px-4 py-2 w-[500px]">
           <FaSearch className="text-[#f5f5f5]" />
           <input
             type="text"
             placeholder="Search..."
-            className="bg-[#5c5470] outline-none text-[#f5f5f5] rounded-md"
+            className="bg-[#1F1F1F] outline-none text-[#f5f5f5] rounded-md"
           />
         </div>
 

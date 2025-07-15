@@ -42,15 +42,15 @@ const Greetings = () => {
         <h1 className="text-[#f5f5f5] text-2xl mb-2 font-semibold tracking-wide">
           Good Morning, Khin!
         </h1>
-        <p className="text-[#ababab] text-sm">
+        <p className="text-[#f5f5f5] text-sm">
           Give your best service for customers.
         </p>
       </div>
       <div>
-        <h1 className="text-[#5f5f5f] text-2xl font-bold tracking-wide w-[130px] ">
+        <h1 className="text-[#f5f5f5] text-2xl font-bold tracking-wide w-[130px] ">
           {formatTime(dateTime)}
         </h1>
-        <p className="text-[#5f5f5f] text-sm">{formatDate(dateTime)}</p>
+        <p className="text-[#f5f5f5] text-sm">{formatDate(dateTime)}</p>
       </div>
     </div>
   );

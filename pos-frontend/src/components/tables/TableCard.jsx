@@ -1,10 +1,21 @@
 import React from "react";
 import { getRandomColor } from "../../utils";
+import { useNavigate } from "react-router-dom";
 
 const TableCard = ({ name, status, initials }) => {
   const bgColor = getRandomColor();
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    if (status === "booked") return; // If the table is booked, don't allow navigation
+    navigate("/Menu"); // Navigate to the Menu page
+  };
+
   return (
-    <div className="w-[450px] bg-[#352F44] hover:bg-[#5C5470] p-4  rounded-lg mb-4 cursor-pointer">
+    <div
+      onClick={handleClick}
+      className="w-[450px] bg-[#000000] hover:bg-[#1a1919] p-4  rounded-lg mb-4 cursor-pointer"
+    >
       <div className="flex items-center justify-between px-1">
         <h1 className="text-[#f5f5f5] text-xl font-semibold">{name}</h1>
         <p

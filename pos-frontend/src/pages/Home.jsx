@@ -9,9 +9,9 @@ import PopularDishes from "../components/home/PopularDishes";
 
 const Home = () => {
   return (
-    <section className="bg-[#1A1A1A]  overflow-hidden flex gap-3">
+    <section className="bg-[#303030] overflow-hidden flex gap-3">
       {/* Left Sidebar */}
-      <div className="flex-[3] bg-[#1a1a1a]">
+      <div className="flex-[3] bg-[#303030] pb-20">
         <Greetings />
         <div className="flex items-center w-full gap-3 px-8 mt-8">
           <MiniCard
@@ -32,7 +32,7 @@ const Home = () => {
         </div>
       </div>
       {/* Right Sidebar */}
-      <div className="flex-[2] bg-[#1a1a1a] ">
+      <div className="flex-[2] bg-[#303030] pb-20 ">
         <PopularDishes />
       </div>
       <BottomNav />

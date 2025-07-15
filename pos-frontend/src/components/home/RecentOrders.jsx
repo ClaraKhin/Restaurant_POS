@@ -5,7 +5,7 @@ import OrderList from "./OrderList";
 const RecentOrders = () => {
   return (
     <div className="px-8 mt-6">
-      <div className="bg-[#352f44] w-full h-[450px] rounded-lg">
+      <div className="bg-[#000000] w-full h-[450px] rounded-lg">
         <div className="flex justify-between items-center px-6 py-4">
           <h1 className="text-[#f5f5f5] text-lg font-semibold tracking-wide">
             Recent Orders
@@ -14,12 +14,12 @@ const RecentOrders = () => {
             View all
           </a>
         </div>
-        <div className="flex items-center gap-4 bg-[#5c5470] rounded-[15px] px-6 py-4 mx-6">
+        <div className="flex items-center gap-4 bg-[#1F1F1F] rounded-[15px] px-6 py-4 mx-6">
           <FaSearch className="text-[#f5f5f5]" />
           <input
             type="text"
             placeholder="Search recent orders..."
-            className="bg-[#5c5470] outline-none text-[#f5f5f5] rounded-md"
+            className="bg-[#1F1F1F] outline-none text-[#f5f5f5] rounded-md"
           />
         </div>
         {/*Order List*/}

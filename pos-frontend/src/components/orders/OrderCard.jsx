@@ -4,7 +4,7 @@ import { FaCircle } from "react-icons/fa";
 
 const OrderCard = () => {
   return (
-    <div className="w-[450px] bg-[#352F44] p-4  rounded-lg mb-4">
+    <div className="w-[450px] bg-[#000000] p-4  rounded-lg mb-4">
       <div className="flex items-center gap-5">
         <button className="bg-[#f6b100] p-4 text-xl font-bold rounded-lg">
           AM
@@ -32,7 +32,7 @@ const OrderCard = () => {
         <p>January 18, 2025 08:32 PM</p>
         <p>8 items</p>
       </div>
-      <hr className="w-full mt-4 border-t-1 border-gray-500" />
+      <hr className="w-full mt-4 border-t-2 border-[#1F1F1F]" />
 
       <div className="flex items-center justify-between mt-4">
         <h1 className="text-[#f5f5f5] text-lg font-semibold">Total</h1>
